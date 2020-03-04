@@ -60,7 +60,9 @@ namespace Client
             });
 
 
-            services.AddControllersWithViews();
+            services.AddHttpClient();
+            services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
         }
 
       
